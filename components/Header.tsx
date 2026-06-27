@@ -19,7 +19,7 @@ export default function Header({
       {/* 🧑 LOGO (LEFT) */}
       <Link href="/" className="flex-shrink-0">
         <img
-          src={lightMode ? "/home/ZO_LOGO_black.png" : "/home/ZO_LOGO_white.png"}
+          src={lightMode ? "/HOME/ZO_LOGO_black.png" : "/HOME/ZO_LOGO_white.png"}
           alt="Logo"
           className="h-15 w-auto opacity-70 hover:opacity-100 transition md:h-15"
         />
@@ -43,7 +43,7 @@ export default function Header({
         rel="noopener noreferrer"
       >
         <img
-          src="/home/imdb-logo.png"
+          src="/HOME/imdb-logo.png"
           alt="IMDb"
           className="h-6 w-auto opacity-80 hover:opacity-100 transition"
         />
