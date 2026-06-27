@@ -282,6 +282,11 @@ export default function OtherPage() {
           />
         </div>
       </button>
+      
+      {/* FOOTER */}
+      <footer className="w-full mt-20 py-12 text-center text-xs uppercase tracking-[0.3em] opacity-50">
+        © {new Date().getFullYear()} All Rights Reserved
+      </footer>
 
     </main>
   );
