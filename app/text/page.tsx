@@ -28,7 +28,7 @@ export default function AcademicPage() {
       type: "MA Thesis",
       abstract:
         "This thesis explores the transformation of filmmaking due to computerization and the shift to digital, specifically focusing on the implementation of digital visual effects. It examines visual effects from aesthetic, narrative, and theoretical perspectives, including cinematic realism theories and the relationship between editing and compositing.",
-      pdf: "/docs/ZsofiaOrdog_KEM7_Thesis_16April2023.pdf",
+      pdf: "/DOCS/ZsofiaOrdog_KEM7_Thesis_16April2023.pdf",
     },
     {
       id: "2",
@@ -38,7 +38,7 @@ export default function AcademicPage() {
       type: "Industry Report",
       abstract:
         "This report analyses Hungary’s emergence as a leading European production hub for Hollywood, focusing on incentive structures, infrastructure, and long-term industry implications.",
-      pdf: "docs//ZsofiaOrdog_Perspectives on the Hungarian Audiovisual Industry.pdf",
+      pdf: "/DOCS/ZsofiaOrdog_Perspectives on the Hungarian Audiovisual Industry.pdf",
     },
     {
       id: "3",
@@ -48,7 +48,7 @@ export default function AcademicPage() {
       type: "Critical Essay",
       abstract:
         "This essay examines the centralization of the Hungarian cultural sector and its impact on artistic freedom, funding structures, and institutional independence in film production.",
-      pdf: "docs//ZsofiaOrdog_KEM7_critical_essay.pdf",
+      pdf: "/DOCS/ZsofiaOrdog_KEM7_critical_essay.pdf",
     },
     {
       id: "4",
@@ -57,7 +57,7 @@ export default function AcademicPage() {
       type: "BA Thesis",
       abstract:
         "This thesis examines anthropomorphism in cinema through Quentin Dupieux’s Rubber (2010), focusing on narrative mechanisms that transform inanimate objects into cinematic characters.",
-      pdf: "docs//Ordog_Zsofia_Antropomorfizmus_a Rubber_c_filmben_2016.pdf",
+      pdf: "/DOCS/Ordog_Zsofia_Antropomorfizmus_a Rubber_c_filmben_2016.pdf",
     },
   ];
 

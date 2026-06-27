@@ -25,7 +25,7 @@ export default function Home() {
         className="absolute left-6 top-6 z-20 md:left-10 md:top-8"
       >
         <img
-          src={lightMode ? "/home/ZO_LOGO_Black.png" : "/home/ZO_LOGO_white.png"}
+          src={lightMode ? "/HOME/ZO_LOGO_Black.png" : "/HOME/ZO_LOGO_white.png"}
           alt="Brand Logo"
           className="h-15 w-auto opacity-70 hover:opacity-100 transition md:h-15"
         />
@@ -39,7 +39,7 @@ export default function Home() {
         className="absolute right-6 top-6 z-20 md:right-10 md:top-8"
       >
         <img
-          src="/home/imdb-logo.png"
+          src="/HOME/imdb-logo.png"
           alt="IMDb"
           className="h-5 w-auto opacity-70 hover:opacity-100 transition"
         />

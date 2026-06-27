@@ -21,73 +21,142 @@ export default function OtherPage() {
       id: "1",
       title: "Inspired by Société - A fashion film by Bálint Szimler (2017)",
       description:"",
-      longDescription: `"You are what you see..."`,
+      longDescription: `"You are what you see and not what you seem." - This film was created as one of the first projects Inspired by Société by director Bálint Szimler and D.O.P Marcell Rév.
+      
+      Director: Bálint Szimler
+      Cinematographer: Marcell Rév
+      Editor: Zsófia Ördög
+      Sound: Viktor Lente
+      Music: Péter Sabák"`,
       vimeoId: "467448366",
-      thumbnail: "/other/societe2.jpg",
+      thumbnail: "/OTHER/societe2.jpg",
     },
     {
       id: "2",
       title: "THE QUALITONS - Zöld - Sárga (2019)",
       description:"",
-      longDescription: `rendező - Kiss Domonkos`,
+      longDescription: `
+      
+      rendező - Kiss Domonkos
+      operatőr - Szemerey Bence
+      vágó - Ördög Zsófia
+      3D szimuláció - Lányi Zoltán
+      animáció - Pálos Róbert, Kiss Domonkos
+      3D scan - Pénzes Bence, Pálos Róbert
+      modellezés - Kiss Domonkos, Szirmai Balázs
+      főcím grafika - Kiss Benedek
+      helyszíni hang - Kiss Gergely Ábel
+      stylist - Németh Juci
+      werk - Szatmári Bendegúz, Pénzes Bence
+      szakmai konzulens - Sánta Balázs`,
       vimeoId: "944436578",
-      thumbnail: "/other/qualitons.jpg",
+      thumbnail: "/OTHER/qualitons.jpg",
     },
     {
       id: "5",
       title: "EGGSPERIMENT (2022)",
       description:"",
-      longDescription: `Dancefilm by Baltic Film...`,
+      longDescription: `Dancefilm by Baltic Film and Media students (2022) 
+     
+      Starring: Irina Pähn 
+      Choreography by Aneta Varts, David Truusa 
+      Cinematography by Camilo Villamizar Plazas 
+      Edited by Zsófia Ördög 
+      Sound Design by Diego Aguilar Gutiérrez,`,
       vimeoId: "716475220",
-      thumbnail: "/other/egg3.jpg",
+      thumbnail: "/OTHER/egg3.jpg",
     },
     {
       id: "4",
       title: "I Spoke to Fire at Midnight (2021)",
       description:"",
-      longDescription: `Trailer by Universidade Lusófona...`,
+      longDescription: `Trailer by Universidade Lusófona students (2021) 
+      
+      Starring Valerie Bradell, 
+      Sara Vujadinovic and Nazih Khalife 
+      Directed by Pedro Hasrouny 
+      Produced by Paco Zavala 
+      Written by Filip Jokanovic 
+      Cinematography by Nela Khalfieva 
+      Edited by Zsófia Ördög 
+      Sound Design by Fernando Torres`,
       vimeoId: "673882907",
-      thumbnail: "/other/fire.jpg",
+      vimeoId: "673882907",
+      thumbnail: "/OTHER/fire.jpg",
     },
     {
       id: "3",
       title: "5 Minutes with Clémentina (2023)",
       description:"",
-      longDescription: `Clémentina's acts of murder...`,
+      longDescription: `Clémentina's acts of murder have been normalised as she pursues viral fame.
+      
+      Director/Writer: Pedro Hasrouny
+      Starring: Maria João Vaz
+      Cinematographer: Marina Tebechrani
+      Poducer: Malu Lins
+      Music: Sangam Panta
+      Editor: Zsófia Ördög`,
       vimeoId: "858211115",
-      thumbnail: "/other/Clementina_SaoPaulo.png",
+      thumbnail: "/OTHER/Clementina_SaoPaulo.png",
     },
     {
       id: "6",
       title: "Weep Not, Dear Sea (2022)",
       description:"",
-      longDescription: `Trailer by KEM7 students...`,
+      longDescription: `Trailer by KEM7 students (2022) 
+      
+      Director: Salvador Alejandro Gutiérrez 
+      Writer: Nusrat Islam Maati 
+      Cinematographer: Bornil Anurag 
+      Producer: Katniss Tung Cheng 
+      Editor: Zsófia Ördög 
+      Sound: Mariana von Seckendorff`,
       vimeoId: "718818974",
-      thumbnail: "/other/weep.jpg",
+      thumbnail: "/OTHER/weep.jpg",
     },
     {
       id: "7",
       title: "BPM - Vol2. - HipHop (2013)",
       description:"",
-      longDescription: `Beats per Minute series...`,
+      longDescription: `An episode of Beats per Minute, a short educational series explaining different musical genres. 
+      
+      Directed by Bálint Szimler, Dávid Kemény 
+      Produced by Zoltán Rozgonyi 
+      Written by Ferenc Kömlődi, Zsolt Prieger 
+      Cinematography by Zágon Nagy E
+      dited by Zsófia Ördög 
+      Sound Design by Báint Seres`,
       vimeoId: "467407189",
-      thumbnail: "/other/bpm2.jpg",
+      thumbnail: "/OTHER/bpm2.jpg",
     },
     {
       id: "8",
       title: "BPM - Vol3. - Techno (2013)",
       description:"",
-      longDescription: `Beats per Minute series...`,
+      longDescription: `An episode of Beats per Minute, a short educational series explaining different musical genres. 
+      
+      Directed by Bálint Szimler, Dávid Kemény 
+      Produced by Zoltán Rozgonyi 
+      Written by Ferenc Kömlődi, Zsolt Prieger 
+      Cinematography by Zágon Nagy 
+      Edited by Zsófia Ördög 
+      Sound Design by Pál Somló, Viktor Lente`,
       vimeoId: "465084288",
-      thumbnail: "/other/bpm3.jpg",
+      thumbnail: "/OTHER/bpm3.jpg",
     },
     {
       id: "9",
       title: "BPM - Vol.4 Rewind (2013)",
       description:"",
-      longDescription: `Beats per Minute series...`,
+      longDescription: `An episode of Beats per Minute, a short educational series explaining different musical genres. 
+      Directed by Bálint Szimler, Dávid Kemény 
+      Produced by Zoltán Rozgonyi 
+      Written by Ferenc Kömlődi, Zsolt Prieger 
+      Cinematography by Zágon Nagy 
+      Edited by Zsófia Ördög 
+      Sound Design by Pál Somló, Viktor Lente`,
       vimeoId: "467407426",
-      thumbnail: "/other/bpm4.jpg",
+      thumbnail: "/OTHER/bpm4.jpg",
     },
     {
       id: "10",
@@ -95,7 +164,7 @@ export default function OtherPage() {
       description:"",
       longDescription: `DOP - Kristóf Deák`,
       vimeoId: "465074732",
-      thumbnail: "/other/trabant.jpg",
+      thumbnail: "/OTHER/trabant.jpg",
     },
     {
       id: "11",
@@ -103,7 +172,7 @@ export default function OtherPage() {
       description:"",
       longDescription: `Directed by Martin Boross`,
       vimeoId: "467412753",
-      thumbnail: "/other/stereo.jpg",
+      thumbnail: "/OTHER/stereo.jpg",
     },
   ];
 
@@ -140,15 +209,6 @@ export default function OtherPage() {
                 />
 
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition" />
-              </div>
-
-              <div className="mt-3">
-                <h2 className="text-sm uppercase tracking-widest group-hover:opacity-70 transition">
-                  {video.title}
-                </h2>
-                <p className="text-xs opacity-70 mt-1">
-                  {video.description}
-                </p>
               </div>
 
             </div>

@@ -17,106 +17,106 @@ export default function VFXPage() {
   const works: Work[] = [
     {
       id: "1",
-      description: "Assistant VFX Editor",
-      image: "/assist/00_DUNE PT3epic.png",
+      description: "",
+      image: "/ASSIST/00_DUNE PT3epic.png",
       imdb: "https://www.imdb.com/title/tt31378509/",
       title: ""
     },
     {
       id: "2",
-      description: "Assistant VFX Editor",
-      image: "/assist/01_DUNE PT2.png",
+      description: "",
+      image: "/ASSIST/01_DUNE PT2.png",
       imdb: "https://www.imdb.com/title/tt15239678",
       title: ""
     },
     {
       id: "3",
-      description: "Assistant Editor",
-      image: "/assist/02_Mars.jpg",
+      description: "",
+      image: "/ASSIST/02_Mars.jpg",
       imdb: "https://www.imdb.com/title/tt4939064",
       title: ""
     },
     {
       id: "4",
-      description: "Additional VFX Editor",
-      image: "/assist/00_HUNYADI.jpg",
+      description: "",
+      image: "/ASSIST/00_HUNYADI.jpg",
       imdb: "https://www.imdb.com/title/tt15373664",
       title: ""
     },
     {
       id: "5",
-      description: "Assistant Editor",
-      image: "/assist/03_K12.jpg",
+      description: "",
+      image: "/ASSIST/03_K12.jpg",
       imdb: "https://www.imdb.com/title/tt10521814",
       title: ""
     },
     {
       id: "6",
-      description: "1st Assistant Editor",
-      image: "/assist/04_Treadstone.jpg",
+      description: "",
+      image: "/ASSIST/04_Treadstone.jpg",
       imdb: "https://www.imdb.com/title/tt8289480",
       title: ""
     },
     {
       id: "7",
-      description: "1st Assistant Editor",
-      image: "/assist/00_MATCHBOX.jpg",
+      description: "",
+      image: "/ASSIST/00_MATCHBOX.jpg",
       imdb: "https://www.imdb.com/title/tt28498219",
       title: ""
     },
     {
       id: "8",
-      description: "Junior editor / Assistant editor",
-      image: "/assist/05_Granny_Project.jpg",
+      description: "",
+      image: "/ASSIST/05_Granny_Project.jpg",
       imdb: "https://www.imdb.com/title/tt5687816",
       title: ""
     },
     {
       id: "9",
-      description: "Assembly / Assistant editor",
-      image: "/assist/06_Masik_eletben.jpg",
+      description: "",
+      image: "/ASSIST/06_Masik_eletben.jpg",
       imdb: "https://www.imdb.com/title/tt10103960",
       title: ""
     },
     {
       id: "10",
-      description: "Assistant editor",
-      image: "/assist/07_Open.jpg",
+      description: "",
+      image: "/ASSIST/07_Open.jpg",
       imdb: "https://www.imdb.com/title/tt7571992",
       title: ""
     },
     {
       id: "11",
-      description: "Assembly / Assistant editor",
-      image: "/assist/08_BUEK.jpg",
+      description: "",
+      image: "/ASSIST/08_BUEK.jpg",
       imdb: "https://www.imdb.com/title/tt8265174",
       title: ""
     },
     {
       id: "12",
-      description: "Assembly / Assistant editor",
-      image: "/assist/09_MEMO.png",
+      description: "",
+      image: "/ASSIST/09_MEMO.png",
       imdb: "https://www.imdb.com/title/tt5641970",
       title: ""
     },
     {
       id: "13",
-      description: "Assistant editor",
-      image: "/assist/10_Dumaparbaj.jpg",
+      description: "",
+      image: "/ASSIST/10_Dumaparbaj.jpg",
       imdb: "https://www.imdb.com/title/tt4059516",
       title: ""
     },    
     {
       id: "14",
-      description: "Assistant editor",
-      image: "/assist/11_TokeletesGyilkos.jpg",
+      description: "",
+      image: "/ASSIST/11_TokeletesGyilkos.jpg",
       imdb: "https://www.imdb.com/title/tt6614914",
       title: ""
     },
     {
       id: "15",
-      description: "Assistant editor",
-      image: "/assist/12_Wakemeup.jpg",
+      description: "",
+      image: "/ASSIST/12_Wakemeup.jpg",
       imdb: "https://www.imdb.com/title/tt4652380",
       title: ""
     },
@@ -132,10 +132,10 @@ export default function VFXPage() {
       <Header lightMode={lightMode} />
 
       {/* CONTENT WRAPPER — EDGE FIX ONLY */}
-      <div className="max-w-6xl mx-auto pt-32 px-0">
+      <div className="max-w-6xl mx-auto pt-32 px-10">
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
 
           {works.map((work) => (
             <a

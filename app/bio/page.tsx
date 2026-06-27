@@ -11,21 +11,17 @@ export default function BioPage() {
 
   return (
     <main className={`min-h-screen ${bg} ${text}`}>
-
       <Header lightMode={lightMode} />
 
       <div className="max-w-6xl mx-auto pt-44 px-6 md:px-12">
-
         <div className="flex flex-col md:flex-row items-start gap-10 md:gap-14">
-
           {/* PORTRAIT */}
           <div className="shrink-0 md:sticky md:top-32 flex flex-col items-center">
-
             <div className="relative w-72 h-72 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-white/10 blur-2xl opacity-30" />
 
               <img
-                src="/bio/BIO_circle_RGB.png"
+                src="/BIO/BIO_circle_RGB.png"
                 alt="Portrait"
                 className="w-full h-full object-cover rounded-full
                 [mask-image:radial-gradient(circle,black_65%,transparent_100%)]
@@ -35,9 +31,8 @@ export default function BioPage() {
 
             {/* CERTIFICATION */}
             <div className="mt-6 flex items-center justify-center gap-4 opacity-90 text-center">
-
               <img
-                src="/bio/avid-certified-media-composer-specialist.png"
+                src="/BIO/avid-certified-media-composer-specialist.png"
                 alt="Avid Certification"
                 className="w-14"
               />
@@ -47,19 +42,16 @@ export default function BioPage() {
                 101–110 Certified
               </div>
             </div>
-
           </div>
 
           {/* BIO TEXT */}
           <div className="max-w-2xl flex flex-col">
-
             <p className="text-sm md:text-[15px] leading-[1.75] opacity-80">
-
-              Zsófi is a freelance film editor, assistant editor, and VFX editor based in Budapest, Hungary. She holds an MA in Film Studies and has over 15 years of experience across narrative film, commercials, and television, collaborating with a wide range of filmmakers and production teams internationally.
+              Zsófi is a freelance film editor, assistant editor, and VFX editor based in Budapest, Hungary. She has over 15 years of experience across narrative film, commercials, and television, collaborating with a wide range of filmmakers and production teams internationally. Throughout her career, she has been fortunate to learn from and collaborate with many inspiring filmmakers.
 
               <br /><br />
 
-              She hold a BA degree in Film Editing from the University of Theatre and Film Arts in Budapest (2013–2016) and completed the Erasmus Mundus KinoEyes MA programme (2021–2023), studying in Lisbon, Tallinn, and Dublin. During this time, she developed several short films and completed her thesis within an international, practice-based creative environment.
+              She holds a BA degree in Film Editing from the University of Theatre and Film Arts in Budapest (2013–2016) and completed the Erasmus Mundus KinoEyes MA programme (2021–2023), studying in Lisbon, Tallinn, and Dublin. During this time, she developed several short films and completed her thesis within an international, practice-based creative environment.
 
               <br /><br />
 
@@ -78,13 +70,12 @@ export default function BioPage() {
               <br /><br />
 
               Member of the European Film Academy and the Hungarian Society of Editors (HSE).
-
             </p>
 
             {/* CV BUTTON */}
             <div className="mt-12 flex justify-center">
               <a
-                href="/bio/Zsofia_Ordog_CV_2026.pdf"
+                href="/BIO/Zsofia_Ordog_CV_2026.pdf"
                 download
                 className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] opacity-70 hover:opacity-100 transition"
               >
@@ -111,8 +102,37 @@ export default function BioPage() {
               </a>
             </div>
 
-          </div>
+            {/* EMAIL */}
+            <div className="mt-6 flex justify-center">
+              <a
+                href="mailto:zsofia.ordog@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] opacity-70 hover:opacity-100 transition"
+              >
+                <svg
+                  className="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16v12H4z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 7l8 6 8-6"
+                  />
+                </svg>
 
+                zsofia.ordog@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -127,7 +147,6 @@ export default function BioPage() {
         className="fixed bottom-6 right-6 z-50"
       >
         <div className="relative w-14 h-8 flex items-center rounded-full px-1 bg-white/10">
-
           <svg className="absolute left-2 w-3.5 h-3.5 opacity-70" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
           </svg>
@@ -144,7 +163,6 @@ export default function BioPage() {
           />
         </div>
       </button>
-
     </main>
   );
 }
