@@ -30,16 +30,24 @@ export default function Header({ lightMode }: { lightMode: boolean }) {
         {/* LOGO */}
         <Link href="/" className="flex-shrink-0">
           <img
-            src={lightMode ? "/HOME/ZO_LOGO_Black.png" : "/HOME/ZO_LOGO_white.png"}
+            src={
+              lightMode
+                ? "/HOME/ZO_LOGO_Black.png"
+                : "/HOME/ZO_LOGO_white.png"
+            }
             alt="Logo"
             className="h-12 w-auto opacity-70 hover:opacity-100 transition md:h-15"
           />
         </Link>
 
-        {/* DESKTOP MENU — original desktop styling */}
+        {/* DESKTOP MENU */}
         <nav className="hidden md:flex gap-8 text-xs md:text-[14px] uppercase tracking-[0.25em] ml-auto mr-10">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="hover:opacity-60 transition">
+            <Link
+              key={link.href}
+              href={link.href}
+              className="hover:opacity-60 transition"
+            >
               {link.label}
             </Link>
           ))}
@@ -65,9 +73,9 @@ export default function Header({ lightMode }: { lightMode: boolean }) {
           className="ml-5 flex flex-col gap-1.5 md:hidden"
           aria-label="Open menu"
         >
-          <span className="block h-px w-7 bg-current" />
-          <span className="block h-px w-7 bg-current" />
-          <span className="block h-px w-7 bg-current" />
+          <span className="block w-7 h-px bg-current" />
+          <span className="block w-7 h-px bg-current" />
+          <span className="block w-7 h-px bg-current" />
         </button>
       </div>
 
@@ -81,7 +89,7 @@ export default function Header({ lightMode }: { lightMode: boolean }) {
               : "rgba(255,255,255,0.16)",
           }}
         >
-          <nav className="flex flex-col gap-5 text-xs uppercase tracking-[0.25em]">
+          <nav className="flex flex-col items-end text-right gap-5 text-xs uppercase tracking-[0.25em]">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -92,6 +100,16 @@ export default function Header({ lightMode }: { lightMode: boolean }) {
                 {link.label}
               </Link>
             ))}
+
+            <a
+              href="https://www.imdb.com/name/nm6768698/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="hover:opacity-60 transition"
+            >
+              IMDb
+            </a>
           </nav>
         </div>
       )}
