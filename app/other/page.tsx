@@ -81,7 +81,6 @@ export default function OtherPage() {
       Edited by Zsófia Ördög 
       Sound Design by Fernando Torres`,
       vimeoId: "673882907",
-      vimeoId: "673882907",
       thumbnail: "/OTHER/fire.jpg",
     },
     {
