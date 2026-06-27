@@ -184,8 +184,8 @@ export default function OtherPage() {
       <Header lightMode={lightMode} />
 
       {/* GRID */}
-      <div className="max-w-6xl mx-auto pt-30 px-0">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto pt-28 md:pt-30 px-6 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
 
           {videos.map((video) => (
             <div key={video.id} className="group cursor-pointer">
@@ -223,7 +223,7 @@ export default function OtherPage() {
           onClick={() => setActiveVideo(null)}
         >
           <div
-            className="relative w-full max-w-7xl grid md:grid-cols-[2.2fr_1fr] gap-6 md:gap-10"
+            className="relative w-full max-w-7xl grid grid-cols-1 md:grid-cols-[2.2fr_1fr] gap-8 md:gap-10"
             onClick={(e) => e.stopPropagation()}
           >
 

@@ -13,11 +13,11 @@ export default function BioPage() {
     <main className={`min-h-screen ${bg} ${text}`}>
       <Header lightMode={lightMode} />
 
-      <div className="max-w-6xl mx-auto pt-44 px-6 md:px-12">
-        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-14">
+      <div className="max-w-6xl mx-auto pt-32 md:pt-44 px-6 md:px-12">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-14">
           {/* PORTRAIT */}
-          <div className="shrink-0 md:sticky md:top-32 flex flex-col items-center">
-            <div className="relative w-72 h-72 md:w-80 md:h-80">
+          <div className="shrink-0 md:sticky md:top-32 flex flex-col items-center mx-auto md:mx-0">
+            <div className="relative w-56 h-56 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-white/10 blur-2xl opacity-30" />
 
               <img
@@ -34,7 +34,7 @@ export default function BioPage() {
               <img
                 src="/BIO/avid-certified-media-composer-specialist.png"
                 alt="Avid Certification"
-                className="w-14"
+                className="w-12 md:w-14"
               />
 
               <div className="text-[10px] uppercase tracking-[0.25em] leading-tight">

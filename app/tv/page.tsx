@@ -33,12 +33,12 @@ export default function FilmPage() {
       <Header lightMode={lightMode} />
 
       {/* CONTENT */}
-      <div className="max-w-6xl mx-auto pt-30 px-0">
+      <div className="max-w-6xl mx-auto pt-28 md:pt-30 px-6 md:px-0">
 
         <div className="flex flex-col gap-10">
 
           {/* ROW 1 */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {firstRow.map((video) => (
               <div key={video.id} className="group cursor-pointer">
 
@@ -65,7 +65,7 @@ export default function FilmPage() {
           </div>
 
           {/* ROW 2 */}
-          <div className="flex justify-center gap-10">
+          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-10">
             {secondRow.map((video) => (
               <div key={video.id} className="group cursor-pointer w-full md:w-1/3">
 
@@ -98,7 +98,7 @@ export default function FilmPage() {
       {/* MODAL */}
       {activeVideo && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-6"
           onClick={() => setActiveVideo(null)}
         >
           <div
