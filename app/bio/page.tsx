@@ -47,7 +47,7 @@ export default function BioPage() {
           {/* BIO TEXT */}
           <div className="max-w-2xl flex flex-col">
             <p className="text-sm md:text-[15px] leading-[1.75] opacity-80">
-              Zsófi is a freelance film editor, assistant editor, and VFX editor based in Budapest, Hungary. She has over 15 years of experience across narrative film, commercials, and television, collaborating with a wide range of filmmakers and production teams internationally. Throughout her career, she has been fortunate to learn from and collaborate with many inspiring filmmakers.
+              Zsófi is a freelance film editor, assistant editor, and VFX editor based in Budapest, Hungary. Over the past 15 years she gained experience across narrative film, commercials, and television, collaborating with a wide range of filmmakers and production teams internationally. Throughout her career, she has been fortunate to learn from and collaborate with many inspiring filmmakers.
 
               <br /><br />
 
