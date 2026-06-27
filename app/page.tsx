@@ -57,7 +57,7 @@ export default function Home() {
       <div className="relative z-10 flex h-full flex-col items-center justify-start pt-[20vh] px-6 text-white">
 
         <div className="w-full max-w-[92vw] flex flex-col items-center">
-          <h1 className="w-full text-center text-[clamp(1.35rem,7vw,4.5rem)] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase opacity-70">
+          <h1 className="w-full text-center text-3xl md:text-6xl font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase opacity-70">
             Zsófia Ördög
           </h1>
 
