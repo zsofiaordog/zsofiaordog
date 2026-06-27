@@ -132,10 +132,10 @@ export default function VFXPage() {
       <Header lightMode={lightMode} />
 
       {/* CONTENT WRAPPER — EDGE FIX ONLY */}
-      <div className="max-w-6xl mx-auto pt-32 px-10">
+      <div className="max-w-6xl mx-auto pt-28 md:pt-32 px-6 md:px-10">
 
         {/* GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
 
           {works.map((work) => (
             <a
@@ -147,7 +147,7 @@ export default function VFXPage() {
             >
 
               {/* IMAGE */}
-              <div className="relative aspect-[2/3] overflow-hidden bg-black">
+              <div className="relative aspect-[2/3] w-full max-w-[320px] md:max-w-none mx-auto overflow-hidden bg-black">
 
                 <img
                   src={work.image}
@@ -156,17 +156,6 @@ export default function VFXPage() {
                 />
 
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition" />
-              </div>
-
-              {/* TEXT */}
-              <div className="mt-3">
-                <h2 className="text-sm md:text-base uppercase tracking-[0.22em] group-hover:opacity-70 transition">
-                  {work.title}
-                </h2>
-
-                <p className="text-xs md:text-sm opacity-80 mt-1">
-                  {work.description}
-                </p>
               </div>
 
             </a>

@@ -161,15 +161,15 @@ Editor: Zsófia Ördög, Zsófi Érdi`,
       <Header lightMode={lightMode} />
 
       {/* GRID */}
-      <div className="max-w-5xl mx-auto pt-32 px-0">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-4 lg:gap-8">
+      <div className="max-w-5xl mx-auto pt-28 md:pt-32 px-6 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-8">
           {videos.map((video) => (
             <button
               key={video.id}
               onClick={() => setActiveVideo(video)}
               className="group flex justify-center"
             >
-              <div className="relative aspect-[2/3] w-full max-w-[240px] md:max-w-[270px] lg:max-w-[290px] overflow-hidden bg-black">
+              <div className="relative aspect-[2/3] w-full max-w-[320px] md:max-w-[270px] lg:max-w-[290px] overflow-hidden bg-black">
                 <img
                   src={video.image}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -191,7 +191,7 @@ Editor: Zsófia Ördög, Zsófi Érdi`,
         >
           <div className="min-h-screen flex items-center justify-center px-6 py-12">
             <div
-              className="relative w-full max-w-7xl grid lg:grid-cols-[1.7fr_1fr] gap-8 lg:gap-12"
+              className="relative w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[1.7fr_1fr] gap-8 lg:gap-12"
               onClick={(e) => e.stopPropagation()}
             >
               {/* CLOSE */}

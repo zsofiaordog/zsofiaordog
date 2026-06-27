@@ -127,8 +127,8 @@ export default function CommercialPage() {
       <Header lightMode={lightMode} />
 
       {/* GRID */}
-      <div className="max-w-6xl mx-auto pt-30 px-0">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto pt-28 md:pt-30 px-6 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
 
           {videos.map((video) => (
             <div key={video.id} className="group cursor-pointer">
@@ -172,7 +172,7 @@ export default function CommercialPage() {
       {/* MODAL — TV STYLE (CENTERED VIDEO ONLY) */}
       {activeVideo && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-6"
           onClick={() => setActiveVideo(null)}
         >
           <div
