@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Ballet } from "next/font/google";
+import "@fontsource/bebas-neue";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
