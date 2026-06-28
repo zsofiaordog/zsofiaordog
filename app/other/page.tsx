@@ -95,7 +95,7 @@ export default function OtherPage() {
       Poducer: Malu Lins
       Music: Sangam Panta
       Editor: Zsófia Ördög`,
-      vimeoId: "858211115",
+      vimeoId: "1205243184",
       thumbnail: "/OTHER/Clementina_SaoPaulo.png",
     },
     {
