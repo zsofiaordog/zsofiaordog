@@ -8,13 +8,10 @@ export default function Home() {
 
   return (
     <main className="relative h-screen w-full overflow-hidden bg-black">
+      {/* HEADER — TRANSPARENT ON HOMEPAGE */}
+      <Header lightMode={lightMode} transparent />
 
-      {/* MOBILE HEADER ONLY */}
-      <div className="md:hidden">
-        <Header lightMode={lightMode} />
-      </div>
-
-      {/* VIMEO BACKGROUND — FULL SCREEN CROPPED */}
+      {/* VIMEO BACKGROUND */}
       <div className="absolute inset-0 overflow-hidden">
         <iframe
           src="https://player.vimeo.com/video/792758998?background=1&autoplay=1&muted=1&loop=1&autopause=0&dnt=1"
@@ -25,73 +22,37 @@ export default function Home() {
       </div>
 
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/45" />
-
-      {/* DESKTOP LOGO */}
-      <a
-        href="/"
-        className="hidden md:block absolute left-10 top-8 z-20"
-      >
-        <img
-          src="/HOME/ZO_LOGO_white.png"
-          alt="Brand Logo"
-          className="h-15 w-auto opacity-70 hover:opacity-100 transition"
-        />
-      </a>
-
-      {/* DESKTOP IMDb */}
-      <a
-        href="https://www.imdb.com/name/nm6768698/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hidden md:block absolute right-10 top-8 z-20"
-      >
-        <img
-          src="/HOME/imdb-logo.png"
-          alt="IMDb"
-          className="h-5 w-auto opacity-70 hover:opacity-100 transition"
-        />
-      </a>
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at center, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.65) 80%)",
+        }}
+      />
 
       {/* MAIN CONTENT */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-start pt-[20vh] px-6 text-white">
-
+      <div className="relative z-10 flex h-full flex-col items-center justify-start pt-[25vh] px-6 text-white">
         <div className="w-full max-w-[92vw] flex flex-col items-center">
-          <h1 className="w-full text-center text-3xl md:text-6xl font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase opacity-70">
+          <h1
+            className="w-full text-center text-3xl md:text-6xl font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase text-[#ffbdf0] opacity-80"
+            style={{
+              textShadow: "0 2px 18px rgba(0,0,0,0.45)",
+            }}
+          >
             Zsófia Ördög
           </h1>
 
-          <div className="mt-1 h-px w-full max-w-[700px] bg-white/40" />
+          <div className="mt-1 h-px w-full max-w-[700px] bg-[#ffbdf0]/30" />
         </div>
 
-        <p className="mt-4 w-full max-w-[92vw] text-center text-[10px] md:text-xs uppercase tracking-[0.28em] md:tracking-[0.45em] opacity-70 leading-relaxed">
+        <p
+          className="mt-4 w-full max-w-[92vw] text-center text-[10px] md:text-xs uppercase tracking-[0.28em] md:tracking-[0.45em] text-[#ffbdf0] opacity-85 leading-relaxed"
+          style={{
+            textShadow: "0 1px 10px rgba(0,0,0,0.35)",
+          }}
+        >
           Film and Video Editor • Assistant Editor • VFX Editor
         </p>
-
-        {/* DESKTOP MENU ONLY */}
-        <nav className="hidden md:flex mt-12 max-w-5xl font-semibold flex-wrap justify-center gap-y-4 text-xs md:text-sm uppercase tracking-[0.20em] opacity-70">
-          <a href="/film" className="transition hover:opacity-60">Film</a>
-          <span className="mx-4 opacity-35">|</span>
-
-          <a href="/assistant-vfx" className="transition hover:opacity-60">AE / VFX</a>
-          <span className="mx-4 opacity-35">|</span>
-
-          <a href="/commercial" className="transition hover:opacity-60">Ads</a>
-          <span className="mx-4 opacity-35">|</span>
-
-          <a href="/tv" className="transition hover:opacity-60">TV</a>
-          <span className="mx-4 opacity-35">|</span>
-
-          <a href="/other" className="transition hover:opacity-60">Other</a>
-          <span className="mx-4 opacity-35">|</span>
-
-          <a href="/text" className="transition hover:opacity-60">Academic</a>
-          <span className="mx-4 opacity-35">|</span>
-
-          <a href="/bio" className="transition hover:opacity-60">Bio</a>
-
-        </nav>
-
       </div>
     </main>
   );
