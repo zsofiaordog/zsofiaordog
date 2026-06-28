@@ -69,14 +69,27 @@ export default function Home() {
         </p>
 
         {/* DESKTOP MENU ONLY */}
-        <nav className="hidden md:flex mt-12 max-w-5xl font-semibold flex-wrap justify-center gap-x-11 gap-y-4 text-xs md:text-sm uppercase tracking-[0.20em] opacity-70">
+        <nav className="hidden md:flex mt-12 max-w-5xl font-semibold flex-wrap justify-center gap-y-4 text-xs md:text-sm uppercase tracking-[0.20em] opacity-70">
           <a href="/film" className="transition hover:opacity-60">Film</a>
+          <span className="mx-4 opacity-35">|</span>
+
           <a href="/assistant-vfx" className="transition hover:opacity-60">AE / VFX</a>
+          <span className="mx-4 opacity-35">|</span>
+
           <a href="/commercial" className="transition hover:opacity-60">Ads</a>
+          <span className="mx-4 opacity-35">|</span>
+
           <a href="/tv" className="transition hover:opacity-60">TV</a>
+          <span className="mx-4 opacity-35">|</span>
+
           <a href="/other" className="transition hover:opacity-60">Other</a>
+          <span className="mx-4 opacity-35">|</span>
+
           <a href="/text" className="transition hover:opacity-60">Academic</a>
+          <span className="mx-4 opacity-35">|</span>
+
           <a href="/bio" className="transition hover:opacity-60">Bio</a>
+
         </nav>
 
       </div>
