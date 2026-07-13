@@ -68,9 +68,9 @@ return (
           <br />
 
           Editor of three theatrically released feature films:{" "}
-          <em className="italic">Lesson Learned</em> (2024), which premiered
+          <em className="italic">Fekete Pont / Lesson Learned</em> (2024), which premiered
           at Locarno Film Festival and won three awards;{" "}
-          <em className="italic">Not a Thing</em> (2022), for which she
+          <em className="italic">Veszélyes lehet a fagyi / Not a Thing</em> (2022), for which she
           received Best Editing at the Toronto Film and Script Awards; and{" "}
           <em className="italic">Balaton Method</em> (2015) the first fully
           crowdfunded cinematic project in Hungary, featuring many of the
