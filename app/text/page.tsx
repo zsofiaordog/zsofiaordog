@@ -100,7 +100,7 @@ export default function AcademicPage() {
               <div className="mt-7">
                 <button
                   onClick={() => setActivePdf(work.pdf)}
-                  className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.35em] opacity-80 hover:opacity-50 transition"
+                  className="inline-flex cursor-pointer items-center gap-2 text-xs uppercase tracking-[0.35em] opacity-80 hover:opacity-50 transition"
                 >
                   {/* PDF ICON */}
                   <svg
@@ -141,7 +141,7 @@ export default function AcademicPage() {
 
             <button
               onClick={() => setActivePdf(null)}
-              className="absolute -top-10 right-0 text-xs uppercase tracking-[0.3em] opacity-70 hover:opacity-100"
+              className="absolute -top-10 right-0 cursor-pointer text-xs uppercase tracking-[0.3em] opacity-70 hover:opacity-100"
             >
               Close
             </button>
@@ -162,7 +162,7 @@ export default function AcademicPage() {
       {/* TOGGLE */}
       <button
         onClick={() => setLightMode(!lightMode)}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-6 right-6 z-50 cursor-pointer"
       >
         <div className="relative w-14 h-8 flex items-center rounded-full px-1 bg-white/10">
 

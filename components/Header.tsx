@@ -63,7 +63,7 @@ export default function Header({
                 : "/HOME/ZO_LOGO_white.png"
             }
             alt="Logo"
-            className="h-12 w-auto opacity-70 hover:opacity-100 transition md:h-15"
+            className="h-12 w-auto opacity-70 hover:opacity-100 hover:text-[#ffbdf0] transition md:h-15"
           />
         </Link>
 
@@ -73,7 +73,7 @@ export default function Header({
             <Link
               key={link.href}
               href={link.href}
-              className="hover:opacity-60 transition"
+              className="transition-colors duration-300 hover:text-[#ffbdf0]"
             >
               {link.label}
             </Link>
@@ -130,7 +130,7 @@ export default function Header({
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="hover:opacity-60 transition"
+                className="transition-colors duration-300 hover:text-[#ffbdf0]"
               >
                 {link.label}
               </Link>
