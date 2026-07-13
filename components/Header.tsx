@@ -14,7 +14,7 @@ export default function Header({
 
   const links = [
     { href: "/film", label: "Film" },
-    { href: "/assistant-vfx", label: "AE / VFX" },
+    { href: "/assistant-vfx", label: "AE | VFX" },
     { href: "/commercial", label: "Ads" },
     { href: "/tv", label: "TV" },
     { href: "/other", label: "Other" },
