@@ -18,7 +18,7 @@ export default function VFXPage() {
     {
       id: "1",
       description: "",
-      image: "/ASSIST/00_DUNE PT3epic.png",
+      image: "/ASSIST/00_DUNE THREE.jpg",
       imdb: "https://www.imdb.com/title/tt31378509/",
       title: ""
     },
