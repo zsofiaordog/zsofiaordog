@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import { useEscapeKey } from "@/hooks/useEscapeKey";
 
 type Video = {
   id: string;
@@ -11,7 +12,8 @@ type Video = {
 export default function FilmPage() {
   const [lightMode, setLightMode] = useState(true);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
-
+  useEscapeKey(!!activeVideo, () => setActiveVideo(null));
+  
   const videos: Video[] = [
     { id: "1", vimeoId: "1144273951" },
     { id: "2", vimeoId: "1144273987" },

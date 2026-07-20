@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import { useEscapeKey } from "@/hooks/useEscapeKey";
 
 type Video = {
   id: string;
@@ -15,12 +16,13 @@ type Video = {
 export default function OtherPage() {
   const [lightMode, setLightMode] = useState(true);
   const [activeVideo, setActiveVideo] = useState<Video | null>(null);
-
+  useEscapeKey(!!activeVideo, () => setActiveVideo(null)); 
+  
   const videos: Video[] = [
     {
       id: "1",
-      title: "Inspired by Société - A fashion film by Bálint Szimler (2017)",
-      description:"",
+      title: "Inspired by Société",
+      description:"A fashion film by Bálint Szimler (2017)",
       longDescription: `"You are what you see and not what you seem." - This film was created as one of the first projects Inspired by Société by director Bálint Szimler and D.O.P Marcell Rév.
       
       Director: Bálint Szimler
@@ -33,10 +35,9 @@ export default function OtherPage() {
     },
     {
       id: "2",
-      title: "THE QUALITONS - Zöld - Sárga (2019)",
-      description:"",
+      title: "THE QUALITONS - Zöld - Sárga",
+      description:"Virtually produced music video (2019)",
       longDescription: `
-      
       rendező - Kiss Domonkos
       operatőr - Szemerey Bence
       vágó - Ördög Zsófia
@@ -54,9 +55,9 @@ export default function OtherPage() {
     },
     {
       id: "5",
-      title: "EGGSPERIMENT (2022)",
-      description:"",
-      longDescription: `Dancefilm by Baltic Film and Media students (2022) 
+      title: "EGGSPERIMENT",
+      description:"Dancefilm by Baltic Film and Media students (2022)",
+      longDescription: `
      
       Starring: Irina Pähn 
       Choreography by Aneta Varts, David Truusa 
@@ -68,9 +69,9 @@ export default function OtherPage() {
     },
     {
       id: "4",
-      title: "I Spoke to Fire at Midnight (2021)",
-      description:"",
-      longDescription: `Trailer by Universidade Lusófona students (2021) 
+      title: "I Spoke to Fire at Midnight",
+      description:"Trailer by Universidade Lusófona students (2021) ",
+      longDescription: `
       
       Starring Valerie Bradell, 
       Sara Vujadinovic and Nazih Khalife 
@@ -85,8 +86,8 @@ export default function OtherPage() {
     },
     {
       id: "3",
-      title: "5 Minutes with Clémentina (2023)",
-      description:"",
+      title: "5 Minutes with Clémentina",
+      description:"Short project (2023)",
       longDescription: `Clémentina's acts of murder have been normalised as she pursues viral fame.
       
       Director/Writer: Pedro Hasrouny
@@ -100,9 +101,9 @@ export default function OtherPage() {
     },
     {
       id: "6",
-      title: "Weep Not, Dear Sea (2022)",
-      description:"",
-      longDescription: `Trailer by KEM7 students (2022) 
+      title: "Weep Not, Dear Sea",
+      description:"Trailer by KEM7 students (2022) ",
+      longDescription: `
       
       Director: Salvador Alejandro Gutiérrez 
       Writer: Nusrat Islam Maati 
@@ -116,8 +117,8 @@ export default function OtherPage() {
     {
       id: "7",
       title: "BPM - Vol2. - HipHop (2013)",
-      description:"",
-      longDescription: `An episode of Beats per Minute, a short educational series explaining different musical genres. 
+      description:"An episode of Beats per Minute, a short educational series explaining different musical genres.",
+      longDescription: `
       
       Directed by Bálint Szimler, Dávid Kemény 
       Produced by Zoltán Rozgonyi 
@@ -131,8 +132,8 @@ export default function OtherPage() {
     {
       id: "8",
       title: "BPM - Vol3. - Techno (2013)",
-      description:"",
-      longDescription: `An episode of Beats per Minute, a short educational series explaining different musical genres. 
+      description:"An episode of Beats per Minute, a short educational series explaining different musical genres. ",
+      longDescription: `
       
       Directed by Bálint Szimler, Dávid Kemény 
       Produced by Zoltán Rozgonyi 
@@ -146,8 +147,9 @@ export default function OtherPage() {
     {
       id: "9",
       title: "BPM - Vol.4 Rewind (2013)",
-      description:"",
-      longDescription: `An episode of Beats per Minute, a short educational series explaining different musical genres. 
+      description:"An episode of Beats per Minute, a short educational series explaining different musical genres. ",
+      longDescription: `
+
       Directed by Bálint Szimler, Dávid Kemény 
       Produced by Zoltán Rozgonyi 
       Written by Ferenc Kömlődi, Zsolt Prieger 
@@ -188,7 +190,7 @@ export default function OtherPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
 
           {videos.map((video) => (
-            <div key={video.id} className="group cursor-pointer">
+            <div key={video.id} className="group cursor-pointer focus:outline-none">
 
               <div
                 className="relative aspect-video overflow-hidden bg-black"
@@ -217,47 +219,70 @@ export default function OtherPage() {
       </div>
 
       {/* MODAL */}
-      {activeVideo && (
-        <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-6"
+{activeVideo && (
+  <div
+    className="fixed inset-0 z-50 bg-black/90 overflow-y-auto"
+    onClick={() => setActiveVideo(null)}
+  >
+    <div className="min-h-screen flex items-center justify-center px-6 py-12">
+      <div
+        className="relative w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[1.7fr_1fr] gap-8 lg:gap-12"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* CLOSE */}
+        <button
           onClick={() => setActiveVideo(null)}
+          className="absolute -top-10 right-0 cursor-pointer text-white/70 hover:text-white transition"
+          aria-label="Close modal"
         >
-          <div
-            className="relative w-full max-w-7xl grid grid-cols-1 md:grid-cols-[2.2fr_1fr] gap-8 md:gap-10"
-            onClick={(e) => e.stopPropagation()}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-7 h-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
           >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
 
-            <div className="aspect-video w-full bg-black">
-              <iframe
-                src={`https://player.vimeo.com/video/${activeVideo.vimeoId}?autoplay=1`}
-                className="w-full h-full"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
+        {/* VIDEO */}
+        <div className="aspect-video bg-black">
+          <iframe
+            src={`https://player.vimeo.com/video/${activeVideo.vimeoId}?autoplay=1`}
+            className="w-full h-full"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
 
-            <div className="relative flex flex-col justify-start">
+        {/* TEXT PANEL */}
+        <div className="text-white overflow-y-auto max-h-[80vh] pr-2">
+          <h2 className="text-xl md:text-2xl uppercase tracking-[0.08em] leading-tight">
+            {activeVideo.title}
+          </h2>
 
-              <button
-                onClick={() => setActiveVideo(null)}
-                className="absolute top-0 right-0 text-white/80 hover:text-white transition"
-              >
-                ✕
-              </button>
+          {activeVideo.description && (
+            <p className="mt-3 text-xs uppercase tracking-[0.25em] opacity-60">
+              {activeVideo.description}
+            </p>
+          )}
 
-              <h2 className="text-lg md:text-2xl uppercase tracking-[0.22em] text-white pr-10">
-                {activeVideo.title}
-              </h2>
+          <div className="w-12 h-px bg-white/20 my-6" />
 
-              <p className="mt-4 text-sm md:text-base text-white/80 leading-relaxed whitespace-pre-line">
-                {activeVideo.longDescription}
-              </p>
-
-            </div>
-
+          <div className="text-sm md:text-[15px] leading-relaxed whitespace-pre-line opacity-90">
+            {activeVideo.longDescription}
           </div>
         </div>
-      )}
+      </div>
+    </div>
+  </div>
+)}
 
       {/* TOGGLE (SAME AS BIO PAGE) */}
       <button

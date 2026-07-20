@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 type Work = {
   id: string;
@@ -165,9 +166,7 @@ export default function VFXPage() {
       </div>
 
       {/* FOOTER */}
-      <footer className="w-full mt-32 py-12 text-center text-xs uppercase tracking-[0.3em] opacity-50">
-        © {new Date().getFullYear()} All Rights Reserved
-      </footer>
+      <Footer />
 
       {/* TOGGLE */}
       <button

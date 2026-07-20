@@ -13,13 +13,13 @@ export default function Header({
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { href: "/film", label: "Film" },
-    { href: "/assistant-vfx", label: "AE | VFX" },
-    { href: "/commercial", label: "Ads" },
-    { href: "/tv", label: "TV" },
-    { href: "/other", label: "Other" },
-    { href: "/text", label: "Academic" },
-    { href: "/bio", label: "Bio" },
+    { href: "/film", label: "film" },
+    { href: "/assistant-vfx", label: "ae | vfx" },
+    { href: "/commercial", label: "ads" },
+    { href: "/tv", label: "tv" },
+    { href: "/other", label: "other" },
+    { href: "/text", label: "academic" },
+    { href: "/bio", label: "bio" },
   ];
 
   return (
@@ -63,12 +63,12 @@ export default function Header({
                 : "/HOME/ZO_LOGO_white.png"
             }
             alt="Logo"
-            className="h-12 w-auto opacity-70 hover:opacity-100 hover:text-[#ffbdf0] transition md:h-15"
+            className="h-12 w-auto opacity-70 hover:opacity-100 transition md:h-15"
           />
         </Link>
 
         {/* DESKTOP MENU */}
-        <nav className="hidden md:flex gap-8 text-xs md:text-[14px] uppercase tracking-[0.25em] ml-auto mr-10">
+        <nav className="hidden md:flex gap-8 text-xs uppercase md:text-[14px] tracking-[0.25em] ml-auto mr-10">
           {links.map((link) => (
             <Link
               key={link.href}

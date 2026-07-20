@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function BioPage() {
 const [lightMode, setLightMode] = useState(true);
@@ -51,39 +52,39 @@ return (
         <p className="text-sm md:text-[15px] leading-[1.75] opacity-80">
           Zsófi is a freelance film editor, assistant and VFX editor based
           in Budapest, Hungary. Over the past fifteen years she gained experience
-          across narrative film, television and commercials, and she has been fortunate to
+          across narrative film, television and commercials. Along the way she has been fortunate to
           learn from and collaborate with many inspiring filmmakers and production teams.
 
           <br />
           <br />
 
-          She holds a BA degree in Film Editing from the University of
-          Theatre and Film Arts in Budapest (2013–2016) and completed the
-          Erasmus Mundus KinoEyes MA programme (2021–2023), studying in
-          Lisbon, Tallinn, and Dublin. During this time, she developed
-          several short projects and her thesis within an international,
-          practice-based creative environment, while also tutoring undergraduate students at the National Film School of Ireland (IADT).
-
-          <br />
-          <br />
-
-          Editor of three theatrically released feature films:{" "}
+          Editor of three feature films:{" "}
           <em className="italic">Fekete Pont / Lesson Learned</em> (2024), which premiered
           at Locarno Film Festival and won three awards;{" "}
           <em className="italic">Veszélyes lehet a fagyi / Not a Thing</em> (2022), for which she
           received Best Editing at the Toronto Film and Script Awards; and{" "}
           <em className="italic">Balaton Method</em> (2015) the first fully
-          crowdfunded cinematic project in Hungary, featuring many of the
+          crowdfunded theatrically released project in Hungary, featuring many of the
           most influential music bands of the era.
 
           <br />
           <br />
 
-          As an assistant editor, she has worked on major international
+          As an assistant and vfx editor, she has worked on major international
           productions including{" "}
           <em className="italic">Dune: Part Two and Three</em> (2023, 2026),
           Mattel’s <em className="italic">Matchbox</em> (2026), and National
           Geographic’s <em className="italic">Mars</em> (2016).
+
+          <br />
+          <br />
+
+          She holds a BA degree in Film Editing from the University of
+          Theatre and Film Arts in Budapest (SZFE, 2013–2016) and completed the
+          Erasmus Mundus KinoEyes MA programme (2021–2023), studying in
+          Lisbon, Tallinn, and Dublin. During this time, she developed
+          several short projects and her thesis within an international,
+          practice-based creative environment, while also tutoring undergraduate students at the National Film School in Ireland (IADT).
 
           <br />
           <br />
@@ -157,9 +158,7 @@ return (
   </div>
 
   {/* FOOTER */}
-  <footer className="w-full mt-32 py-12 text-center text-xs uppercase tracking-[0.3em] opacity-50">
-    © {new Date().getFullYear()} All Rights Reserved
-  </footer>
+  <Footer />
 
   {/* TOGGLE */}
   <button

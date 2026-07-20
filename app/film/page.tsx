@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { useEscapeKey } from "@/hooks/useEscapeKey";
 
 type Video = {
   id: string;
@@ -15,11 +17,12 @@ type Video = {
 export default function FilmPage() {
   const [lightMode, setLightMode] = useState(true);
   const [activeVideo, setActiveVideo] = useState<Video | null>(null);
+  useEscapeKey(!!activeVideo, () => setActiveVideo(null));
 
   const videos: Video[] = [
     {
       id: "1",
-      title: "Fekete Pont │ Lesson Learned",
+      title: "Lesson Learned │ Fekete Pont",
       description: "Feature (2024)",
       longDescription: `Young teacher Juci rebels against archaic school methods as Palkó struggles to adapt.
 
@@ -34,7 +37,7 @@ Editor: Zsófia Ördög`,
     },
     {
       id: "2",
-      title: "Not a Thing",
+      title: "Not a Thing │ Veszélyes lehet a fagyi ",
       description: "Feature (2022)",
       longDescription: `Two identical twins live a completely different life and see each other in quite different perspectives. One is a rich housewife with a newborn, the other is a doctor with low income, but with a sparkling new relationship.
 
@@ -92,7 +95,7 @@ Sound: Mariana von Seckendorff`,
     },
     {
       id: "6",
-      title: "Orsi és Tenshinhan",
+      title: "Tien Shinhan │ Orsi és Tenshinhan",
       description: "Short (2020)",
       longDescription: `
 
@@ -108,7 +111,7 @@ Editor: Zsófia Ördög`,
     },
     {
       id: "7",
-      title: "Her Dangerous Feet",
+      title: "Her Dangerous Feet │ A csatárnő bal lába életveszélyes",
       description: "Short (2017) ",
       longDescription: `
 
@@ -124,7 +127,7 @@ Editor: Zsófia Ördög`,
     },
     {
       id: "8",
-      title: "Age of Aquarius",
+      title: "Age of Aquarius │ Minden vonal",
       description: "Short (2017)",
       longDescription: `
 
@@ -139,7 +142,7 @@ Editor: Zsófia Ördög`,
     },
     {
       id: "9",
-      title: "White Wolf",
+      title: "White Wolf │ Fehér Farkas",
       description: "Short (2015)",
       longDescription: `
 
@@ -167,7 +170,7 @@ Editor: Zsófia Ördög, Zsófi Érdi`,
             <button
               key={video.id}
               onClick={() => setActiveVideo(video)}
-              className="group flex justify-center"
+              className="group flex justify-center focus:outline-none"
             >
               <div className="relative aspect-[2/3] w-full max-w-[320px] md:max-w-[270px] lg:max-w-[290px] overflow-hidden bg-black">
                 <img
@@ -228,7 +231,7 @@ Editor: Zsófia Ördög, Zsófi Érdi`,
 
               {/* TEXT PANEL */}
               <div className="text-white overflow-y-auto max-h-[80vh] pr-2">
-                <h2 className="text-xl md:text-2xl uppercase tracking-[0.12em] leading-tight">
+                <h2 className="text-xl md:text-xl uppercase tracking-[0.05em] leading-tight">
                   {activeVideo.title}
                 </h2>
 
@@ -283,9 +286,7 @@ Editor: Zsófia Ördög, Zsófi Érdi`,
         </div>
       </button>
 
-      <footer className="w-full mt-32 py-12 text-center text-xs uppercase tracking-[0.3em] opacity-50">
-        © {new Date().getFullYear()} All Rights Reserved
-      </footer>
+      <Footer />
     </main>
   );
 }

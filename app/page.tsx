@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import HomeFooter from "@/components/HomeFooter";
 
 export default function Home() {
   const [lightMode] = useState(false);
@@ -34,9 +35,9 @@ export default function Home() {
       <div className="relative z-10 flex h-full flex-col items-center justify-start pt-[25vh] px-6 text-white">
         <div className="w-full max-w-[92vw] flex flex-col items-center">
           <h1
-            className="w-full text-center text-3xl md:text-6xl font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase text-[#ffbdf0] opacity-80"
+            className="w-full text-center text-3xl md:text-6xl font-medium tracking-[0.18em] md:tracking-[0.22em] uppercase text-[#ffbdf0] opacity-90 leading-tight"
             style={{
-              textShadow: "0 2px 18px rgba(0,0,0,0.45)",
+              textShadow: "0 2px 10px rgba(0,0,0,0.45)",
             }}
           >
             Zsófia Ördög
@@ -46,14 +47,18 @@ export default function Home() {
         </div>
 
         <p
-          className="mt-4 w-full max-w-[92vw] text-center text-[10px] md:text-xs uppercase tracking-[0.28em] md:tracking-[0.45em] text-[#ffbdf0] opacity-85 leading-relaxed"
+          className="mt-4 w-full max-w-[92svw] text-center text-[10px] md:text-xs uppercase tracking-[0.28em] md:tracking-[0.45em] text-[#ffbdf0] opacity-85 leading-relaxed"
           style={{
             textShadow: "0 1px 10px rgba(0,0,0,0.35)",
           }}
         >
           Film and Video Editor • Assistant Editor • VFX Editor
         </p>
-      </div>
+
+        </div>  
+       {/* FOOTER */}
+         <HomeFooter />
+
     </main>
   );
 }
