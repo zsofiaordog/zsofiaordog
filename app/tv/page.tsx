@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { useEscapeKey } from "@/hooks/useEscapeKey";
 
 type Video = {
@@ -13,7 +14,7 @@ export default function FilmPage() {
   const [lightMode, setLightMode] = useState(true);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   useEscapeKey(!!activeVideo, () => setActiveVideo(null));
-  
+
   const videos: Video[] = [
     { id: "1", vimeoId: "1144273951" },
     { id: "2", vimeoId: "1144273987" },
@@ -166,9 +167,7 @@ export default function FilmPage() {
       </button>
 
       {/* FOOTER */}
-      <footer className="w-full mt-20 py-12 text-center text-xs uppercase tracking-[0.3em] opacity-50">
-        © {new Date().getFullYear()} All Rights Reserved
-      </footer>
+      <Footer />
 
     </main>
   );

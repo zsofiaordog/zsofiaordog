@@ -66,13 +66,22 @@ export default function AcademicPage() {
     },
   ];
 
+  const openPdf = (pdf: string) => {
+    if (window.innerWidth < 768) {
+      window.open(pdf, "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    setActivePdf(pdf);
+  };
+
   return (
     <main className={`min-h-screen ${bg} ${text}`}>
       <Header lightMode={lightMode} />
 
       {/* CONTENT */}
-      <div className="max-w-4xl mx-auto pt-40 px-6 md:px-10">
-        <h1 className="text-xs uppercase tracking-[0.4em] opacity-60 mb-16">
+      <div className="mx-auto max-w-4xl px-6 pt-40 md:px-10">
+        <h1 className="mb-16 text-xs uppercase tracking-[0.4em] opacity-60">
           Academic Work
         </h1>
 
@@ -85,11 +94,11 @@ export default function AcademicPage() {
               {/* TITLE */}
               <button
                 type="button"
-                onClick={() => setActivePdf(work.pdf)}
+                onClick={() => openPdf(work.pdf)}
                 className="block cursor-pointer text-left focus:outline-none focus-visible:outline-none"
                 aria-label={`Open ${work.title} PDF`}
               >
-                <h2 className="text-lg md:text-xl font-normal leading-snug transition-opacity hover:opacity-50">
+                <h2 className="text-lg font-normal leading-snug transition-opacity hover:opacity-50 md:text-xl">
                   {work.title}
                 </h2>
               </button>
@@ -100,7 +109,7 @@ export default function AcademicPage() {
               </div>
 
               {/* ABSTRACT */}
-              <p className="mt-6 text-sm md:text-base leading-relaxed opacity-80 max-w-3xl">
+              <p className="mt-6 max-w-3xl text-sm leading-relaxed opacity-80 md:text-base">
                 {work.abstract}
               </p>
 
@@ -108,12 +117,12 @@ export default function AcademicPage() {
               <div className="mt-7">
                 <button
                   type="button"
-                  onClick={() => setActivePdf(work.pdf)}
+                  onClick={() => openPdf(work.pdf)}
                   className="inline-flex cursor-pointer items-center gap-2 text-xs uppercase tracking-[0.35em] opacity-80 transition hover:opacity-50 focus:outline-none focus-visible:outline-none"
                 >
                   {/* PDF ICON */}
                   <svg
-                    className="w-4 h-4 opacity-70"
+                    className="h-4 w-4 opacity-70"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -136,10 +145,10 @@ export default function AcademicPage() {
         </div>
       </div>
 
-      {/* PDF MODAL */}
+      {/* PDF MODAL — DESKTOP ONLY */}
       {activePdf && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+          className="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 md:flex"
           onClick={() => setActivePdf(null)}
         >
           <div
