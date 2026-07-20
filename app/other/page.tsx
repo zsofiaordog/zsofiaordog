@@ -57,7 +57,7 @@ export default function OtherPage() {
     {
       id: "5",
       title: "EGGSPERIMENT",
-      description:"Dancefilm by BFM (Tallinn) students (2022)",
+      description:"Dancefilm by KEM7 students (2022)",
       longDescription: `
      
       Starring: Irina Pähn 
@@ -71,7 +71,7 @@ export default function OtherPage() {
     {
       id: "4",
       title: "I Spoke to Fire at Midnight",
-      description:"Trailer by Universidade Lusófona students (2021) ",
+      description:"Trailer by by KEM7 students (2021) ",
       longDescription: `
       
       Starring Valerie Bradell, 
