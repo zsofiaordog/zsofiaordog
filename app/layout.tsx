@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const avenirNext = localFont({
@@ -187,6 +188,8 @@ export default function RootLayout({
       >
         {children}
       </body>
+
+      <GoogleAnalytics gaId="G-3LG6RXR11D" />
     </html>
   );
 }
