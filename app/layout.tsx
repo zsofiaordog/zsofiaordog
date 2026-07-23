@@ -74,7 +74,17 @@ export default function RootLayout({
       lang="en"
       className={`${avenirNext.variable} ${avenirNext.className} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <head>
+        <link rel="preconnect" href="https://player.vimeo.com" />
+        <link rel="preconnect" href="https://i.vimeocdn.com" />
+      </head>
+
+      <body
+        suppressHydrationWarning
+        className="flex min-h-full flex-col"
+      >
+        {children}
+      </body>
     </html>
   );
 }
