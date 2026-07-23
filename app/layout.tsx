@@ -52,16 +52,111 @@ const avenirNext = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Zsófia Ördög | Film Editor",
-  description: "Portfolio of Zsófia Ördög",
+  metadataBase: new URL("https://www.zsofiaordog.com"),
+
+  title: {
+    default: "Zsófia Ördög | Film Editor",
+    template: "%s | Zsófia Ördög",
+  },
+
+  description:
+    "Portfolio of Zsófia Ördög, film editor, assistant editor and VFX editor based in Budapest.",
+
+  applicationName: "Zsófia Ördög Portfolio",
+  category: "Portfolio",
+
+  keywords: [
+    "Zsófia Ördög",
+    "film editor",
+    "assistant editor",
+    "VFX editor",
+    "Avid editor",
+    "Budapest film editor",
+    "Hungarian film editor",
+    "narrative film editor",
+  ],
+
+  authors: [
+    {
+      name: "Zsófia Ördög",
+      url: "https://www.zsofiaordog.com",
+    },
+  ],
+
+  creator: "Zsófia Ördög",
+  publisher: "Zsófia Ördög",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Zsófia Ördög | Film Editor",
+    description:
+      "Portfolio of Zsófia Ördög, film editor, assistant editor and VFX editor based in Budapest.",
+    url: "/",
+    siteName: "Zsófia Ördög",
+    locale: "en_GB",
+    type: "website",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Zsófia Ördög – Film Editor",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Zsófia Ördög | Film Editor",
+    description:
+      "Portfolio of Zsófia Ördög, film editor, assistant editor and VFX editor based in Budapest.",
+    images: ["/og-image.jpg"],
+  },
+
   icons: {
     icon: "/favicon.ico",
   },
-  openGraph: {
-    title: "Zsófia Ördög | Film Editor",
-    description: "Portfolio of Zsófia Ördög",
-    siteName: "Zsófia Ördög",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.zsofiaordog.com/#person",
+
+  name: "Zsófia Ördög",
+
+  url: "https://www.zsofiaordog.com",
+
+  image: "https://www.zsofiaordog.com/og-image.jpg",
+
+  jobTitle: "Film Editor",
+
+  description:
+    "Film editor, assistant editor and VFX editor based in Budapest, Hungary, specialising in narrative feature films and television.",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Budapest",
+    addressCountry: "HU",
   },
+
+  knowsAbout: [
+    "Film Editing",
+    "Narrative Editing",
+    "Feature Films",
+    "Television",
+    "Assistant Editing",
+    "VFX Editorial",
+    "Avid Media Composer",
+    "DaVinci Resolve",
+    "Film Post-production",
+  ],
+
+  sameAs: ["https://www.imdb.com/name/nm6768698/"],
 };
 
 export default function RootLayout({
@@ -77,6 +172,13 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://player.vimeo.com" />
         <link rel="preconnect" href="https://i.vimeocdn.com" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
       </head>
 
       <body
