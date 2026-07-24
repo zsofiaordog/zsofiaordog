@@ -35,7 +35,7 @@ export default function Home() {
       <div className="relative z-10 flex h-full flex-col items-center justify-start pt-[25vh] px-6 text-white">
         <div className="w-full max-w-[92vw] flex flex-col items-center">
           <h1
-            className="w-full text-center text-3xl md:text-6xl font-medium tracking-[0.18em] md:tracking-[0.22em] uppercase text-[#ffbdf0] opacity-90 leading-tight"
+            className="w-full text-center text-2xl md:text-5xl font-medium tracking-[0.18em] md:tracking-[0.22em] uppercase text-[#ffbdf0] opacity-90 leading-tight"
             style={{
               textShadow: "0 2px 10px rgba(0,0,0,0.45)",
             }}
@@ -43,11 +43,11 @@ export default function Home() {
             Zsófia Ördög
           </h1>
 
-          <div className="mt-1 h-px w-full max-w-[700px] bg-[#ffbdf0]/30" />
+          <div className="mt-2 h-px w-full max-w-[620px] bg-[#ffbdf0]/30" />
         </div>
 
         <p
-          className="mt-4 w-full max-w-[92svw] text-center text-[10px] md:text-xs uppercase tracking-[0.28em] md:tracking-[0.45em] text-[#ffbdf0] opacity-85 leading-relaxed"
+          className="mt-4 w-full max-w-[92svw] text-center text-[10px] md:text-[11px] uppercase tracking-[0.26em] md:tracking-[0.40em] text-[#ffbdf0] opacity-85 leading-relaxed"
           style={{
             textShadow: "0 1px 10px rgba(0,0,0,0.35)",
           }}
