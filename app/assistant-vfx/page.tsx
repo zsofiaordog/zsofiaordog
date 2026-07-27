@@ -38,6 +38,13 @@ export default function VFXPage() {
       title: ""
     },
     {
+      id: "7",
+      description: "",
+      image: "/ASSIST/00_MATCHBOX.jpg",
+      imdb: "https://www.imdb.com/title/tt28498219",
+      title: ""
+    },
+    {
       id: "4",
       description: "",
       image: "/ASSIST/00_HUNYADI.jpg",
@@ -52,24 +59,17 @@ export default function VFXPage() {
       title: ""
     },
     {
-      id: "6",
-      description: "",
-      image: "/ASSIST/04_Treadstone.jpg",
-      imdb: "https://www.imdb.com/title/tt8289480",
-      title: ""
-    },
-    {
-      id: "7",
-      description: "",
-      image: "/ASSIST/00_MATCHBOX.jpg",
-      imdb: "https://www.imdb.com/title/tt28498219",
-      title: ""
-    },
-    {
       id: "8",
       description: "",
       image: "/ASSIST/05_Granny_Project.jpg",
       imdb: "https://www.imdb.com/title/tt5687816",
+      title: ""
+    },
+    {
+      id: "6",
+      description: "",
+      image: "/ASSIST/04_Treadstone.jpg",
+      imdb: "https://www.imdb.com/title/tt8289480",
       title: ""
     },
     {
