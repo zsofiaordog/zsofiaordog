@@ -37,20 +37,20 @@ export default function OtherPage() {
     {
       id: "2",
       title: "THE QUALITONS - Zöld - Sárga",
-      description:"Virtually produced music video (2019)",
+      description:"Virtual music video (2019)",
       longDescription: `
-      rendező - Kiss Domonkos
-      operatőr - Szemerey Bence
-      vágó - Ördög Zsófia
-      3D szimuláció - Lányi Zoltán
-      animáció - Pálos Róbert, Kiss Domonkos
+      directed by - Kiss Domonkos
+      DOP - Szemerey Bence
+      Editor - Ördög Zsófia
+      3D simulation - Lányi Zoltán
+      animation - Pálos Róbert, Kiss Domonkos
       3D scan - Pénzes Bence, Pálos Róbert
-      modellezés - Kiss Domonkos, Szirmai Balázs
-      főcím grafika - Kiss Benedek
-      helyszíni hang - Kiss Gergely Ábel
+      modelling - Kiss Domonkos, Szirmai Balázs
+      graphics - Kiss Benedek
+      on-set sound - Kiss Gergely Ábel
       stylist - Németh Juci
-      werk - Szatmári Bendegúz, Pénzes Bence
-      szakmai konzulens - Sánta Balázs`,
+      behind the scenes - Szatmári Bendegúz, Pénzes Bence
+      creative consultant - Sánta Balázs`,
       vimeoId: "944436578",
       thumbnail: "/OTHER/qualitons.jpg",
     },
@@ -124,8 +124,8 @@ export default function OtherPage() {
       Directed by Bálint Szimler, Dávid Kemény 
       Produced by Zoltán Rozgonyi 
       Written by Ferenc Kömlődi, Zsolt Prieger 
-      Cinematography by Zágon Nagy E
-      dited by Zsófia Ördög 
+      Cinematography by Zágon Nagy
+      Edited by Zsófia Ördög 
       Sound Design by Báint Seres`,
       vimeoId: "467407189",
       thumbnail: "/OTHER/bpm2.jpg",
