@@ -79,10 +79,7 @@ return (
           <br />
           <br />
 
-          She holds a BA degree in Film Editing from the University of
-          Theatre and Film Arts in Budapest (SZFE, 2013–2016) and completed the
-          Erasmus Mundus KinoEyes MA programme (2021–2023), studying in
-          Lisbon, Tallinn, and Dublin. During this time, she developed
+          She holds a BA degree in Film Editing from the University of Theatre and Film Arts in Budapest (SZFE, 2013–2016) and was awarded a scholarship to the Erasmus Mundus KinoEyes MA programme (2021–2023), studying in Lisbon, Tallinn, and Dublin. During this time, she developed
           several short projects and her thesis within an international,
           practice-based creative environment, while also tutoring undergraduate students at the National Film School in Ireland (IADT).
 
