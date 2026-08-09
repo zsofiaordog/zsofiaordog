@@ -63,7 +63,7 @@ export default function Header({
                 : "/HOME/ZO_LOGO_white.png"
             }
             alt="Logo"
-            className="h-12 w-auto opacity-70 hover:opacity-100 transition md:h-15"
+            className="h-10 w-auto opacity-70 hover:opacity-100 transition md:h-12"
           />
         </Link>
 
