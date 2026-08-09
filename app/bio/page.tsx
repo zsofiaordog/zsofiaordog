@@ -19,7 +19,7 @@ return (
 
       {/* PORTRAIT */}
       <div className="shrink-0 flex flex-col items-center mx-auto md:mx-0">
-        <div className="relative w-56 h-56 md:w-80 md:h-80">
+        <div className="relative w-56 h-56 md:w-65 md:h-65">
           <div className="absolute inset-0 rounded-full bg-white/10 blur-2xl opacity-30" />
 
           <img
